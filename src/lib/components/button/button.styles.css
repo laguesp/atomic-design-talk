@@ -1,0 +1,24 @@
+.improving-button {
+  align-items: center;
+  background-color: hsl(var(--color-button-background-enabled));
+  border-radius: var(--size-1x);
+  border: 0;
+  color: hsl(var(--color-button-content), 0.5);
+  cursor: pointer;
+  display: flex;
+  font-weight: bolder;
+  outline: none;
+  padding: var(--size-1x);
+  text-transform: uppercase;
+  transition: background-color 100ms ease;
+}
+
+.improving-button:hover,
+.improving-button:focus {
+  background-color: hsl(var(--color-button-background-focused));
+}
+
+.improving-button:disabled {
+  background-color: hsl(var(--color-button-background-disabled));
+  cursor: default;
+}

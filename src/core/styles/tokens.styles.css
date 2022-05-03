@@ -1,0 +1,11 @@
+:root {
+  --size-1x: 12px;
+  --size-2x: calc(var(--size-1x) * 2);
+  --size-3x: calc(var(--size-1x) * 3);
+  --size-4x: calc(var(--size-1x) * 4);
+
+  --color-button-background-disabled: 341, 19%, 90%;
+  --color-button-background-enabled: 341, 100%, 71%;
+  --color-button-background-focused: 341, 59%, 56%;
+  --color-button-content: 0, 0%, 0%;
+}
