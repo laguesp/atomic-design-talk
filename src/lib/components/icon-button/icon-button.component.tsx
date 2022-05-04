@@ -16,7 +16,7 @@ import type { ReactElement } from 'react'
  * */
 export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
   (props, ref): ReactElement => {
-    const classNameString = clsx('improving-icon-button', props.className)
+    const classNameString = clsx('with-icon', props.className)
 
     return (
       <Button

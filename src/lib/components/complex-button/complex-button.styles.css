@@ -1,0 +1,60 @@
+.improving-button.with-complex-content .secondary-content {
+  opacity: 0.5;
+}
+
+.improving-button.with-complex-content .secondary-content.with-text.with-left-position {
+  margin-right: var(--size-1x);
+}
+
+.improving-button.with-complex-content .secondary-content.with-text.with-right-position {
+  margin-left: var(--size-1x);
+}
+
+.improving-button.with-complex-content .secondary-content.with-icon.with-left-position {
+  margin-right: var(--size-4x);
+}
+
+.improving-button.with-complex-content .secondary-content.with-icon.with-right-position {
+  margin-left: var(--size-4x);
+}
+
+
+.improving-button.with-complex-content .secondary-content.with-left-position.with-1x-spacing {
+  margin-right: var(--size-1x);
+}
+
+.improving-button.with-complex-content .secondary-content.with-left-position.with-2x-spacing {
+  margin-right: var(--size-2x);
+}
+
+.improving-button.with-complex-content .secondary-content.with-left-position.with-3x-spacing {
+  margin-right: var(--size-3x);
+}
+
+.improving-button.with-complex-content .secondary-content.with-left-position.with-4x-spacing {
+  margin-right: var(--size-4x);
+}
+
+.improving-button.with-complex-content .secondary-content.with-right-position.with-1x-spacing {
+  margin-left: var(--size-1x);
+}
+
+.improving-button.with-complex-content .secondary-content.with-right-position.with-2x-spacing {
+  margin-left: var(--size-2x);
+}
+
+.improving-button.with-complex-content .secondary-content.with-right-position.with-3x-spacing {
+  margin-left: var(--size-3x);
+}
+
+.improving-button.with-complex-content .secondary-content.with-right-position.with-4x-spacing {
+  margin-left: var(--size-4x);
+}
+
+.improving-button.with-complex-content svg {
+  --size-icon: calc(var(--size-1x) * 1.5);
+
+  display: block;
+  height: var(--size-icon);
+  width: var(--size-icon);
+}

@@ -1,4 +1,4 @@
-.improving-icon-button svg {
+.improving-button.with-icon svg {
   --size-icon: calc(var(--size-1x) * 1.5);
 
   display: block;
