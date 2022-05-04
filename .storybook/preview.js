@@ -1,3 +1,4 @@
+import '../src/core/styles/baseline.styles.css'
 import '../src/core/styles/tokens.styles.css'
 
 export const parameters = {

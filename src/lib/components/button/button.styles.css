@@ -6,6 +6,8 @@
   color: hsl(var(--color-button-content), 0.5);
   cursor: pointer;
   display: flex;
+  font-family: inherit;
+  font-size: var(--size-1x);
   font-weight: bolder;
   outline: none;
   padding: var(--size-1x);

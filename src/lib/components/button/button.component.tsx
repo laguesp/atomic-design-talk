@@ -1,24 +1,38 @@
 import './button.styles.css'
 
 import { forwardRef } from 'react'
+import clsx from 'clsx'
 
 import type { ButtonProps } from './button.types'
-import type { Ref, ReactElement } from 'react'
 
-const Button = (
-  { children, className, ...props }: ButtonProps,
-  ref?: Ref<HTMLButtonElement>
-): ReactElement => {
-  return (
-    <button
-      className={`improving-button ${className}`}
-      ref={ref}
-      type='button'
-      {...props}
-    >
-      {children}
-    </button>
-  )
+/**
+ * This component is just a wrapper around the HTML `button` element, providing the basic styles for all the buttons on the app.
+ *
+ * This component is not responsible for managing the content. Whatever you provide as `children` should be [a valid HTML5 button content category](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) or a react element with valid content.
+ *
+ * The only styles applied to the content are `font-family`, `font-size`, `font-weight`, `text-transform` and `color`.
+ * */
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (props, ref) => {
+    const classNameString = clsx('improving-button', props.className)
+
+    return (
+      <button
+        className={classNameString}
+        disabled={props.disabled}
+        onClick={props.onClick}
+        ref={ref}
+        type={props.type}
+      >
+        {props.children}
+      </button>
+    )
+  }
+)
+
+Button.defaultProps = {
+  disabled: false,
+  type: 'button',
 }
 
-export default forwardRef<HTMLButtonElement, ButtonProps>(Button)
+export default Button

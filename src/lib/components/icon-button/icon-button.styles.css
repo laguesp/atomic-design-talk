@@ -1,5 +1,7 @@
 .improving-icon-button svg {
+  --size-icon: calc(var(--size-1x) * 1.5);
+
   display: block;
-  height: var(--size-2x);
-  width: var(--size-2x);
+  height: var(--size-icon);
+  width: var(--size-icon);
 }
