@@ -18,9 +18,9 @@ export type SecondaryContent =
   | { icon: PhosphorIconComponent; alt?: string }
 
 export interface ComplexButtonProps extends ButtonProps {
-  /** Secondary content on the `left` side. */
+  /** Secondary content on the `left` side. The secondary content can be a `string` to render secondary text or you can pass an `object` to render an icon. */
   left?: SecondaryContent
-  /** Secondary content on the `right` side. */
+  /** Secondary content on the `right` side. The secondary content can be a `string` to render secondary text or you can pass an `object` to render an icon. */
   right?: SecondaryContent
   /** Spacing options for the primary content passed as `children`. */
   spacing?: Spacing
